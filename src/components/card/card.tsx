@@ -39,17 +39,18 @@ export const Card = ({
       {!isClientSelect && (
         <S.WapperActions>
           <S.pointer onClick={() => addSelectedCustomer(item)}>
-            <AddIcon />
+            <AddIcon data-testid="add-icon" />
           </S.pointer>
 
           <S.pointer
+            data-testid="edit-icon-wrapper"
             onClick={() => {
               setModalCreateOrEdit(true);
               setIsEdit(true);
               setDataCustomer(item);
             }}
           >
-            <EditIcon />
+            <EditIcon data-testid="edit-icon" />
           </S.pointer>
 
           <S.pointer
@@ -58,7 +59,7 @@ export const Card = ({
               setDataCustomer(item);
             }}
           >
-            <TrashIcon />
+            <TrashIcon data-testid="trash-icon" />
           </S.pointer>
         </S.WapperActions>
       )}
