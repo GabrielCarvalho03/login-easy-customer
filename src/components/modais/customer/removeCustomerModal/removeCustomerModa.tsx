@@ -39,7 +39,7 @@ export const RemoveCustomerModal = () => {
         <S.ModalContent>
           <S.Text>
             Você está prestes a excluir o cliente:{" "}
-            <TextStrong>{dataCustomer.name}</TextStrong>
+            <TextStrong>{dataCustomer?.name}</TextStrong>
           </S.Text>
 
           <S.WapperButton onClick={() => deleteCustomer(dataCustomer.id)}>

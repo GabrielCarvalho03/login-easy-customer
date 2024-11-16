@@ -35,7 +35,7 @@ export const WapperActions = styled.div`
   margin-top: 10px;
 `;
 
-export const pointer = styled.div`
+export const pointer = styled.button`
   cursor: pointer;
 `;
 

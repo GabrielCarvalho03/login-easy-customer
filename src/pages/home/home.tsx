@@ -72,6 +72,7 @@ export const Home = () => {
               count={customers.totalPages}
               page={actualPage}
               shape="rounded"
+              data-testid="home-pagination"
             />
           </>
         )}
