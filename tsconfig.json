@@ -2,25 +2,23 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "baseUrl": "./src",
+    "outDir": "./dist",
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
+    "skipLibCheck": true,
     "paths": {
       "@components/*": ["components/*"],
       "@styles/*": ["styles/*"],
       "@pages/*": ["pages/*"],
       "@assets/*": ["assets/*"],
-      "@api/*": ["api/*"],
-      "@hooks/*": ["hooks/*"],
-      "@app/*": ["app/*"],
-      "@dtos/*": ["dtos/*"],
-      "@repositories/*": ["repositories/*"],
-      "@utils/*": ["utils/*"]
+      "@hooks/*": ["hooks/*"]
     },
     "jsx": "react-jsx",
     "lib": ["esnext", "dom"],
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
 
-  "include": ["src", "test"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "test", "cypress", "**/*.spec.tsx"]
 }

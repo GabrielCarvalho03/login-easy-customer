@@ -3,10 +3,9 @@ import { CustomInput } from "@components/customInput/custom-input";
 import { Datauser } from "@hooks/useUser/schema";
 import * as S from "@pages/start/styles";
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
 
 export const Start = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -16,7 +15,7 @@ export const Start = () => {
     reValidateMode: "onChange",
   });
   const handledate = (data: any) => {
-    navigate(`/home/${data.name}/clientes`);
+    // navigate(`/home/${data.name}/clientes`);
   };
 
   return (
@@ -28,7 +27,7 @@ export const Start = () => {
             {...register("name")}
             borderRadius="small"
             height="large"
-            placeholder="Digite seu e-mail"
+            placeholder="Digite seu nome"
             error={errors.name?.message}
           />
           <CustomButton

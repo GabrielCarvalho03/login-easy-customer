@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "test": "vitest",
-    "cypress:open": "cypress open"
+    "start": "vite --port 3000",
+    "cy:open": "start-server-and-test start http://localhost:3000 cypressopen",
+    "cy:run": "start-server-and-test start http://localhost:3000 ccypress:run"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
@@ -34,6 +36,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
+    "@types/cypress": "^0.1.6",
     "@types/node": "^22.9.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
