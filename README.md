@@ -76,11 +76,6 @@ Antes de começar, certifique-se de ter o Node.js e o npm (ou yarn) instalados n
    
 O projeto estará disponível em http://localhost:3000.
 
-## Testes
 
-1. Para executar os testes, execute:
-   
-   ```sh
-   npm run test ou yarn test
 
 
