@@ -1,50 +1,81 @@
-# React + TypeScript + Vite
+# Customers Microfrontend
+![image](https://github.com/user-attachments/assets/2be8933d-a159-4926-981f-2b5a23f7c5ae)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descrição
 
-## Expanding the ESLint configuration
+O projeto `customers-microfrontend` é um microfrontend desenvolvido com React e Vite. Ele permite a visualização e gerenciamento de clientes, incluindo funcionalidades de paginação.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Funcionalidades
 
-- Configure the top-level `parserOptions` property like this:
+- Visualização de clientes
+  
+![image](https://github.com/user-attachments/assets/cce4da0f-9b42-4f27-97eb-9a9e72950f20)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Edição de um cliente
+  
+    ![Uploading image.png…]()
+  
+- Remoção de um cliente
+- Paginação de cliente
+- Integração com API externa
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Tecnologias Utilizadas
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- React
+- Vite
+- TypeScript
+- Styled-components
+- Axios
+- React Hook Form
+- React Router DOM
+- Zustand
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter o Node.js e o npm (ou yarn) instalados na sua máquina.
+
+## Instalação
+
+1. Clone o repositório:
+
+   ```sh
+   git clone https://github.com/GabrielCarvalho03/easy-customer.git
+
+
+
+2. Navegue até o diretório do projeto:
+
+   ```sh
+   cd easy-customer
+
+3. Navegue até o diretório do projeto:
+
+   ```sh
+   npm install ou yarn install
+
+## Configuração
+
+1. Crie um arquivo .env.local na raiz do projeto e adicione a URL base da API:
+
+      ```sh
+   VITE_BASE_URL=https://sua-api-url.com
+
+## Uso
+
+1. Para iniciar o projeto em modo de desenvolvimento, execute:
+   
+   ```sh
+   npm run dev ou yarn dev
+   
+O projeto estará disponível em http://localhost:3000.
+
+## Testes
+
+1. Para executar os testes, execute:
+   
+   ```sh
+   npm run test ou yarn test
+
+
