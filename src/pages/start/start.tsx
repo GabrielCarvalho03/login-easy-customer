@@ -5,7 +5,6 @@ import * as S from "@pages/start/styles";
 import { useForm } from "react-hook-form";
 
 export const Start = () => {
-  // const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -15,7 +14,7 @@ export const Start = () => {
     reValidateMode: "onChange",
   });
   const handledate = (data: any) => {
-    // navigate(`/home/${data.name}/clientes`);
+    window.location.href = `https://easy-customer-zif6.vercel.app/home/${data.name}/clientes`;
   };
 
   return (
