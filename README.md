@@ -15,10 +15,15 @@ O projeto `customers-microfrontend` é um microfrontend desenvolvido com React e
 
 - Edição de um cliente
   
-    ![Uploading image.png…]()
-  
+   ![image](https://github.com/user-attachments/assets/cfcf9b7b-e1d4-4923-8abe-32dd85d0787d)
+
 - Remoção de um cliente
+
+![image](https://github.com/user-attachments/assets/8aeb3084-a44b-41e9-b567-9ea02b53044c)
+
 - Paginação de cliente
+
+  
 - Integração com API externa
 
 ## Tecnologias Utilizadas
